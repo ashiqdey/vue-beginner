@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="cdn/vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<button v-on:click='reveal'>click me</button>
+</div>
+
+
+<script>
+var app = new Vue({
+	el : '#app',
+	data : {
+		rand : Math.floor(Math.random() * 100)
+	},
+	methods : {
+		reveal(){
+			alert(`Random number is ${this.rand}`)
+		}
+	}
+})
+
+</script>
+</body>
+</html>

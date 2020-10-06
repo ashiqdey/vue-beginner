@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<ul>
+		<li v-for="e in colors">{{e}}</li>
+	</ul>
+</div>
+
+
+<script>
+var app = new Vue({
+	el : '#app',
+	data : {
+		colors : ['red','blue','green']
+	}
+})
+
+</script>
+</body>
+</html>

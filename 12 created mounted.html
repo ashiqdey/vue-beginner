@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+</div>
+
+
+<script>
+
+
+
+var app = new Vue({
+	el : '#app',
+	data : {
+	},
+	created(){
+		alert(`created The time is ${Date.now()}`);
+	},
+
+	mounted(){
+		alert(`mounted The time is ${Date.now()}`);
+	}
+})
+
+</script>
+</body>
+</html>

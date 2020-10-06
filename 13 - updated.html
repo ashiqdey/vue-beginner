@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<button @click='inc'>{{count}}</button>
+</div>
+
+
+<script>
+
+
+
+var app = new Vue({
+	el : '#app',
+	data : {
+		count :1
+	},
+	methods : {
+		inc(){
+			this.count++
+		}
+	},
+	updated(){
+		console.log("updated",this.count);
+	}
+})
+
+</script>
+</body>
+</html>

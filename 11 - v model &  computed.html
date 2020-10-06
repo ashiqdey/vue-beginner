@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<h2>Change text</h2>
+	<input v-model="message" placeholder="edit me">
+	<p>Message is: {{ message }}</p>
+	<p>Message in lower: {{ lowercase }}</p>
+</div>
+
+
+<script>
+
+
+
+var app = new Vue({
+	el : '#app',
+	data : {
+		message : 'hello'
+	},
+	computed : {
+		lowercase(){
+			return this.message.toLowerCase()
+		}
+	}
+})
+
+</script>
+</body>
+</html>

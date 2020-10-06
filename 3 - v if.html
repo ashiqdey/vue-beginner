@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.min.js"></script>
+</head>
+<body>
+
+<div id="root">
+	<div v-bind:title="rand" v-if='show'>Randon numer</div>
+</div>
+
+
+<script>
+var app = new Vue({
+	el : '#root',
+	data : {
+		rand : Math.floor(Math.random() * 50),
+		show:0
+	}
+})
+
+</script>
+</body>
+</html>

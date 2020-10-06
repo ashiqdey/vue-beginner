@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<ul>
+		<li v-for="e in colors" v-if="e.primary">{{e.name}}</li>
+	</ul>
+</div>
+
+
+<script>
+var app = new Vue({
+	el : '#app',
+	data : {
+		colors : [
+			{name:"blue",primary:true},
+			{name:"grey",primary:false},
+			{name:"red",primary:true},
+			{name:"pink",primary:true},
+			{name:"green",primary:false},
+		]
+	}
+})
+
+</script>
+</body>
+</html>
